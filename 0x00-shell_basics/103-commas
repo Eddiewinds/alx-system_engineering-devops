@@ -1,26 +1,2 @@
 #!/bin/bash
-#!/bin/bash
-
-# List all files and directories in the current directory
-# Sort them in the required order and format
-
-# Get list of all files and directories, including hidden ones
-contents=$(ls -a)
-
-# Loop through each entry
-output=""
-for entry in $contents; do
-    # Check if entry is a directory or file
-    if [ -d "$entry" ]; then
-        # If directory, add '/' at the end
-        output="$output$entry/, "
-    else
-        # If file, add directly
-        output="$output$entry, "
-    fi
-done
-
-# Print the final output, removing the trailing comma and space
-echo "${output%, }"
-echo   # Print a new line at the end
-
+ls -a
