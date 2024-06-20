@@ -1,0 +1,2 @@
+#!/bin/bash
+find . -type f -empty -exec sh -c 'for file; do echo "$(basename "$file")"; done' sh {} + -o -type d -empty -exec sh -c 'for dir; do echo "$(basename "$dir")"; done' sh {} +
