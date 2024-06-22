@@ -1,0 +1,3 @@
+#!/bin/bash
+echo #!/bin/bash
+{a..z} {a..z} | tr ' ' '\n' |grep -v 'oo'
